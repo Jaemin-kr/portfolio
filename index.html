@@ -156,7 +156,7 @@ tr:nth-child(even) td { background: var(--color-bg-alt); }
     <p class="summary-box-title">Summary</p>
     <ul style="margin:0 0 0 16px">
       <li><strong>시스템 엔지니어 약 2년 5개월</strong> — 물리 서버·네트워크부터 가상화·클라우드까지 온프레미스 전 레이어를 직접 운영</li>
-      <li><strong>가상화 운영 전문성</strong> — VMware·ESXi·XCP-ng·Xen 4개 하이퍼바이저를 통합 운영, 물리 호스트 32대·VM 492개 규모 자산을 자동 수집·관리</li>
+      <li><strong>가상화 운영 전문성</strong> — VMware·ESXi·XCP-ng·Xen 4개 하이퍼바이저를 통합 운영, 물리 호스트 32대·VM 492개 규모 자산 자동 수집·관리</li>
       <li><strong>서버 운영 자동화·표준화</strong> — VMware Content Library 및 OS 설치 스크립트 개발을 통해 <strong>VM 구성 시간 50% 단축</strong>, 반복 운영을 코드로 표준화</li>
       <li><strong>OS(Linux) &amp; 3-Tier 구축</strong> — Rocky Linux/RHEL 중심 운영, WEB-WAS-DB 3-Tier 신규 설계·구축</li>
     </ul>
@@ -178,9 +178,9 @@ tr:nth-child(even) td { background: var(--color-bg-alt); }
     </div>
     <div class="proj-body">
       <ul>
-        <li>엑셀 수동 관리로 인한 VM 자산 누락·최신화 문제를 인식, 운영 자원의 <strong>Source of Truth</strong> 확보를 목표로 Netbox 테스트 후 공수 과다를 판단하여 <strong>가상화 레이어만 API로 자동 수집</strong>하는 방향으로 범위를 스스로 조정</li>
+        <li>엑셀 수동 관리로 인한 VM 자산 누락·최신화 문제를 인식, 운영 자원의 <strong>Source of Truth</strong> 확보를 목표로 Netbox 테스트 진행</li>
         <li>VMware vSphere(REST) / ESXi(pyvmomi SOAP) / XCP-ng(XAPI XML-RPC) / Xen Orchestra(REST) — <strong>4개 플랫폼·4가지 API 프로토콜을 단일 인터페이스로 통합</strong>, 물리 호스트 <strong>32대</strong>·VM <strong>492개</strong>를 자동 수집</li>
-        <li>사이트별 vCenter 개별 로그인 후 수동 엑셀 작성하던 vMotion 대상 선정을 <strong>명령어 1회 실행으로 대체</strong>, 자산관리대장(호스트/VM/요약) 자동 생성</li>
+        <li>사이트별 vCenter 개별 로그인 후 수동 엑셀 작성하던 작업 대상 자산 목록 취합을 <strong>명령어 1회 실행으로 대체</strong>, 자산관리대장(호스트/VM/요약) 자동 생성</li>
       </ul>
       <div class="tech-stack">
         <span class="tech-tag">Python</span><span class="tech-tag">vSphere REST</span><span class="tech-tag">pyvmomi(SOAP)</span><span class="tech-tag">XCP-ng XAPI</span><span class="tech-tag">Xen Orchestra</span><span class="tech-tag">openpyxl</span>
