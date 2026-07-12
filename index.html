@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>고재민 · 경력기술서 (인프라 시스템 엔지니어)</title>
-<meta name="description" content="고재민 — 인프라 시스템 엔지니어. 멀티 가상화 운영·서버 운영 자동화·온프레미스 인프라 경력기술서.">
+<title>고재민 · 경력기술서 (Server Engineer)</title>
+<meta name="description" content="고재민 — 시스템 엔지니어. 멀티 가상화 운영·서버 운영 자동화·온프레미스 인프라 경력기술서.">
 <style>
 :root {
   --color-primary:       #002855;
@@ -129,7 +129,7 @@ tr:nth-child(even) td { background: var(--color-bg-alt); }
 <header class="hero">
   <div class="hero-inner">
     <h1>고재민</h1>
-    <div class="role">인프라 시스템 엔지니어 · 경력기술서</div>
+    <div class="role">시스템 엔지니어 · 경력기술서</div>
     <div class="contact">
       <span>📧 <a href="mailto:jaemin.ko98@gmail.com">jaemin.ko98@gmail.com</a></span>
       <span>🖥️ 멀티 가상화 운영 · 서버 운영 자동화 · 온프레미스 인프라</span>
@@ -154,12 +154,12 @@ tr:nth-child(even) td { background: var(--color-bg-alt); }
   <div class="summary-box">
     <p class="summary-box-title">Summary</p>
     <ul style="margin:0 0 0 16px">
-      <li><strong>인프라 시스템 엔지니어 약 2년 5개월</strong> — 물리 서버·네트워크부터 멀티 가상화·클라우드까지 온프레미스 전 레이어를 직접 운영</li>
+      <li><strong>시스템 엔지니어 약 2년 5개월</strong> — 물리 서버·네트워크부터 멀티 가상화·클라우드까지 온프레미스 전 레이어를 직접 운영</li>
       <li><strong>가상화 운영 전문성</strong> — VMware·ESXi·XCP-ng·Xen 4개 하이퍼바이저를 통합 운영, 물리 호스트 32대·VM 492개 규모 자산을 자동 수집·관리</li>
       <li><strong>서버 운영 자동화·표준화</strong> — Python·Ansible로 OS 설치 및 멀티서버 운영을 자동화하여 <strong>VM 구성 시간 50% 단축</strong>, 반복 운영을 코드로 표준화</li>
       <li><strong>OS(Windows/Linux) 실무 &amp; 3-Tier 구축</strong> — Rocky Linux/RHEL 중심 운영, 폐쇄망 WEB-WAS-DB 3-Tier 신규 설계·구축</li>
     </ul>
-    <blockquote style="margin-top:12px">"온프레미스 물리부터 멀티 가상화·프라이빗 클라우드까지, 운영을 코드로 표준화·자동화해온 인프라 엔지니어."</blockquote>
+    <blockquote style="margin-top:12px">"온프레미스 환경에서 부터 클라우드까지, 운영을 코드로 표준화·자동화해온 시스템 엔지니어."</blockquote>
   </div>
 
   <div class="section-header">
@@ -219,7 +219,6 @@ tr:nth-child(even) td { background: var(--color-bg-alt); }
       <ul>
         <li>다수 서버 대상 계정 생성·삭제·패스워드 변경, iptables 다단계 점검, 클러스터 모니터링 등 <strong>Ansible 자동화 도구 운영</strong></li>
         <li>기존 인프라(인벤토리·인증·variable 패턴) 기반으로 <strong>신규 Playbook 직접 작성</strong> — OpenSSL 버전 일괄 수집(block/rescue 패턴), 웹쉘 탐지 스크립트 배포·실행·결과 수집</li>
-        <li>Pacemaker/Corosync(pcs) 클러스터 오류 상태 자동 수집·장애 유형별 로그 분류</li>
       </ul>
       <div class="tech-stack">
         <span class="tech-tag">Ansible(ad-hoc·Playbook)</span><span class="tech-tag">Bash/Shell</span><span class="tech-tag">Rocky Linux/RHEL</span><span class="tech-tag">Pacemaker/Corosync</span>
@@ -238,7 +237,7 @@ tr:nth-child(even) td { background: var(--color-bg-alt); }
     <div class="proj-body">
       <ul>
         <li>선불망(폐쇄망) 내 <strong>Tableau Server를 신규 설계·구축</strong></li>
-        <li><strong>WEB-WAS-DB 3-Tier 인프라</strong>와 L4(로드밸런싱)/DNS/Reverse Proxy를 직접 구성하여 안정적 서비스 접근 경로 확보</li>
+        <li><strong>WEB-WAS-DB 3-Tier 인프라</strong>를 직접 구성하여 안정적 서비스 접근 경로 확보</li>
       </ul>
       <div class="tech-stack">
         <span class="tech-tag">Tableau Server</span><span class="tech-tag">Citrix L4</span><span class="tech-tag">DNS</span><span class="tech-tag">Apache Reverse Proxy</span>
@@ -270,14 +269,14 @@ tr:nth-child(even) td { background: var(--color-bg-alt); }
     <ul>
       <li><strong>물리 인프라:</strong> Dell/Lenovo 서버 펌웨어 업데이트(iDRAC/IMM), IDC 서버 반입·반출 및 케이블 포설</li>
       <li><strong>네트워크·보안:</strong> Fortigate 방화벽 정책·VPN 관리, Cisco 스위치 config</li>
-      <li><strong>가상화·VDI:</strong> VMware vSphere, Xen Hypervisor, Citrix VDI 운영</li>
-      <li>물리서버 → 네트워크 → 가상화 → 클라우드까지 <strong>인프라 전 레이어를 직접 운영</strong>하며 폭넓은 오너십 축적</li>
+      <li><strong>가상화:</strong> VMware vSphere, Xen Hypervisor 운영</li>
+      <li>물리서버 → 네트워크 → 가상화 → 클라우드까지 <strong>인프라 전 레이어를 직접 운영</strong></li>
     </ul>
   </div>
 
   <h3 style="margin-top:8px">이전 경력 — 우리에프아이에스 인프라본부 클라우드팀 <span style="font-weight:400;color:#888;font-size:13px">(2023.10 ~ 2023.12)</span></h3>
   <ul>
-    <li>우리금융그룹 그룹공동 클라우드 도입 로드맵 및 개념 문서 작성, 클라우드 서비스 모델(IaaS/PaaS/SaaS) 정리</li>
+    <li>우리금융그룹 그룹공동 클라우드 도입 로드맵 및 개념 문서 작성, 그룹공동 클라우드 PoC 참여</li>
   </ul>
 
   <div class="section-header">
@@ -285,11 +284,11 @@ tr:nth-child(even) td { background: var(--color-bg-alt); }
   </div>
   <table>
     <tr><th>분류</th><th>보유 기술</th></tr>
-    <tr><td><strong>가상화</strong></td><td>VMware vSphere, Content Library, XCP-ng, ESXi, Xen Hypervisor, Citrix VDI</td></tr>
+    <tr><td><strong>가상화</strong></td><td>VMware vSphere, Content Library, XCP-ng, ESXi, Xen Hypervisor</td></tr>
     <tr><td><strong>OS</strong></td><td>Rocky Linux / RHEL</td></tr>
     <tr><td><strong>운영 자동화·IaC</strong></td><td>Ansible, Python, Bash/Shell Script</td></tr>
     <tr><td><strong>물리·하드웨어</strong></td><td>Dell/Lenovo 서버, iDRAC/IMM, 펌웨어, IDC 설치·케이블 포설</td></tr>
-    <tr><td><strong>네트워크·보안</strong></td><td>Fortigate 방화벽·VPN, Cisco 스위치, Citrix L4, DNS</td></tr>
+    <tr><td><strong>네트워크·보안</strong></td><td>Fortigate 방화벽·VPN, Cisco 스위치, DNS</td></tr>
     <tr><td><strong>클라우드·컨테이너</strong></td><td>AWS(Bedrock, CLI), docker-compose, LiteLLM</td></tr>
   </table>
 
