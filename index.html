@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고재민 · 경력기술서 (인프라 시스템 엔지니어)</title>
+<meta name="description" content="고재민 — 인프라 시스템 엔지니어. 멀티 가상화 운영·서버 운영 자동화·온프레미스 인프라 경력기술서.">
+<style>
+:root {
+  --color-primary:       #002855;
+  --color-primary-light: #0046a3;
+  --color-accent:        #7ab0e8;
+  --color-accent-muted:  #aec6e0;
+  --color-bg-page:    #eef0f4;
+  --color-bg-card:    #ffffff;
+  --color-bg-surface: #f4f7fc;
+  --color-bg-alt:     #f8f9fc;
+  --color-text-primary:   #1a1a1a;
+  --color-text-secondary: #2c2c2c;
+  --color-text-muted:     #555555;
+  --color-text-faint:     #777777;
+  --color-text-label:     #888888;
+  --color-border:       #e4e8f0;
+  --color-border-strong:#d0ddf0;
+  --font-base: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --font-mono: 'Consolas', 'Courier New', monospace;
+  --font-size-xs:   11px;
+  --font-size-sm:   12px;
+  --font-size-base: 14px;
+  --font-size-md:   15px;
+  --font-size-lg:   16px;
+  --font-size-xl:   18px;
+  --font-size-2xl:  19px;
+  --font-size-3xl:  20px;
+  --line-height-base: 1.85;
+  --space-1: 4px; --space-2: 6px; --space-3: 8px;
+  --space-4: 10px; --space-5: 12px; --space-6: 14px;
+  --space-7: 16px; --space-8: 18px; --space-9: 20px;
+  --space-10: 24px; --space-11: 28px; --space-12: 32px;
+  --space-13: 44px; --space-14: 52px; --space-15: 56px; --space-16: 64px;
+  --shadow-card: 0 2px 20px rgba(0,0,0,0.08);
+  --radius-sm: 3px; --radius-md: 4px; --radius-lg: 6px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
+}
+.hero {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: #fff; padding: 48px 64px 40px;
+}
+.hero-inner { max-width: 880px; margin: 0 auto; }
+.hero h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 6px; }
+.hero .role { font-size: var(--font-size-lg); color: var(--color-accent); font-weight: 600; margin-bottom: 16px; }
+.hero .contact { font-size: var(--font-size-sm); color: var(--color-accent-muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.hero .contact a { color: var(--color-accent-muted); text-decoration: none; }
+.hero .contact a:hover { color: #fff; text-decoration: underline; }
+.page {
+  max-width: 880px; margin: -20px auto 60px;
+  background: var(--color-bg-card);
+  padding: var(--space-14) var(--space-16);
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-lg);
+}
+.section-header {
+  display: flex; align-items: baseline; gap: var(--space-5);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--space-5); margin: var(--space-12) 0 var(--space-10);
+}
+.section-header:first-of-type { margin-top: 0; }
+.section-header h2 { font-size: var(--font-size-2xl); font-weight: 700; color: var(--color-primary); margin: 0; }
+.section-sub { font-size: var(--font-size-sm); color: var(--color-text-faint); font-weight: 400; }
+h3 { font-size: var(--font-size-md); font-weight: 700; color: var(--color-primary); margin: 28px 0 10px; }
+h4 { font-size: var(--font-size-base); font-weight: 700; color: #1a3a5c; margin: 20px 0 8px; }
+p  { margin-bottom: var(--space-4); color: var(--color-text-secondary); }
+ul { margin: var(--space-2) 0 var(--space-6) 20px; }
+li { margin-bottom: var(--space-1); }
+strong { font-weight: 700; }
+em { font-style: italic; color: var(--color-text-muted); }
+blockquote {
+  border-left: 3px solid var(--color-primary-light);
+  padding: var(--space-4) var(--space-7); margin: var(--space-5) 0;
+  background: var(--color-bg-surface); border-radius: var(--radius-sm);
+  color: #2c4a7c; font-style: italic;
+}
+table { width: 100%; border-collapse: collapse; margin: var(--space-6) 0 var(--space-9); font-size: var(--font-size-sm); }
+th { background: var(--color-primary); color: #fff; padding: 9px var(--space-5); text-align: left; font-weight: 600; }
+td { padding: 8px var(--space-5); border-bottom: 1px solid var(--color-border); vertical-align: top; }
+tr:nth-child(even) td { background: var(--color-bg-alt); }
+.meta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); margin-bottom: var(--space-10); }
+.meta-card { background: var(--color-bg-surface); border-radius: var(--radius-lg); padding: var(--space-6) var(--space-7); border-left: 3px solid var(--color-primary-light); }
+.meta-card .label { font-size: var(--font-size-xs); color: var(--color-text-label); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-1); }
+.meta-card .value { font-size: var(--font-size-base); font-weight: 700; color: var(--color-primary); }
+.summary-box { background: var(--color-bg-surface); border-radius: var(--radius-lg); padding: var(--space-7) var(--space-9); margin-bottom: 28px; border-left: 3px solid var(--color-primary); }
+.summary-box-title { margin: 0 0 6px; font-weight: 700; color: var(--color-primary); }
+.proj-card { border: 1px solid var(--color-border); border-radius: var(--radius-lg); margin-bottom: var(--space-10); overflow: hidden; }
+.proj-header { background: var(--color-bg-surface); padding: var(--space-6) var(--space-8); border-bottom: 1px solid var(--color-border); display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.proj-title  { font-size: var(--font-size-base); font-weight: 700; color: var(--color-primary); }
+.proj-period { font-size: var(--font-size-sm); color: var(--color-text-label); white-space: nowrap; }
+.proj-tag    { font-size: var(--font-size-sm); color: var(--color-text-muted); font-style: italic; }
+.proj-body   { padding: var(--space-7) var(--space-8); }
+.proj-body ul { margin: var(--space-2) 0 var(--space-4) 18px; }
+.proj-body li { margin-bottom: var(--space-2); }
+.tech-stack { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+.tech-tag { background: #eef2ff; color: #3730a3; padding: 3px 9px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); font-weight: 600; }
+.steady-work { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-7) var(--space-8); margin-bottom: var(--space-10); }
+.steady-work h4 { margin-top: 0; }
+.footer { max-width: 880px; margin: 0 auto; padding: 0 64px 40px; font-size: var(--font-size-xs); color: var(--color-text-faint); text-align: center; }
+@media print {
+  body { background: #fff; }
+  .hero { padding: 30px 40px; }
+  .page { box-shadow: none; margin: 0 auto; padding: 30px 40px; border-radius: 0; }
+  .proj-card, .steady-work { break-inside: avoid; }
+}
+@media (max-width: 720px) {
+  .hero { padding: 36px 24px 32px; }
+  .page { padding: 32px 24px; margin: -20px 12px 40px; }
+  .meta-grid { grid-template-columns: 1fr; }
+  .proj-header { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1>고재민</h1>
+    <div class="role">인프라 시스템 엔지니어 · 경력기술서</div>
+    <div class="contact">
+      <span>📧 <a href="mailto:jaemin.ko98@gmail.com">jaemin.ko98@gmail.com</a></span>
+      <span>🖥️ 멀티 가상화 운영 · 서버 운영 자동화 · 온프레미스 인프라</span>
+      <span>🎓 AWS SAA / CCP · OPIc IH</span>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <div class="section-header">
+    <h2>경력 요약</h2>
+    <span class="section-sub">총 경력 약 2년 5개월</span>
+  </div>
+
+  <div class="meta-grid">
+    <div class="meta-card"><div class="label">총 경력</div><div class="value">약 2년 5개월</div></div>
+    <div class="meta-card"><div class="label">현 소속</div><div class="value">다우기술 인프라운영팀</div></div>
+    <div class="meta-card"><div class="label">핵심 역량</div><div class="value">멀티 가상화 · 운영 자동화</div></div>
+  </div>
+
+  <div class="summary-box">
+    <p class="summary-box-title">Summary</p>
+    <ul style="margin:0 0 0 16px">
+      <li><strong>인프라 시스템 엔지니어 약 2년 5개월</strong> — 물리 서버·네트워크부터 멀티 가상화·클라우드까지 온프레미스 전 레이어를 직접 운영</li>
+      <li><strong>가상화 운영 전문성</strong> — VMware·ESXi·XCP-ng·Xen 4개 하이퍼바이저를 통합 운영, 물리 호스트 32대·VM 492개 규모 자산을 자동 수집·관리</li>
+      <li><strong>서버 운영 자동화·표준화</strong> — Python·Ansible로 OS 설치 및 멀티서버 운영을 자동화하여 <strong>VM 구성 시간 50% 단축</strong>, 반복 운영을 코드로 표준화</li>
+      <li><strong>OS(Windows/Linux) 실무 &amp; 3-Tier 구축</strong> — Rocky Linux/RHEL 중심 운영, 폐쇄망 WEB-WAS-DB 3-Tier 신규 설계·구축</li>
+    </ul>
+    <blockquote style="margin-top:12px">"온프레미스 물리부터 멀티 가상화·프라이빗 클라우드까지, 운영을 코드로 표준화·자동화해온 인프라 엔지니어."</blockquote>
+  </div>
+
+  <div class="section-header">
+    <h2>주요 프로젝트</h2>
+    <span class="section-sub">다우기술 인프라운영팀 (2024.02 ~ 현재)</span>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div>
+        <div class="proj-title">멀티 하이퍼바이저 가상화 서버 자산 자동 수집 도구 개발</div>
+        <div class="proj-tag">기획·설계·개발 단독 수행</div>
+      </div>
+      <div class="proj-period">2026.02 ~ 2026.04</div>
+    </div>
+    <div class="proj-body">
+      <ul>
+        <li>엑셀 수동 관리로 인한 VM 자산 누락·최신화 문제를 인식, 운영 자원의 <strong>Source of Truth</strong> 확보를 목표로 Netbox 테스트 후 공수 과다를 판단하여 <strong>가상화 레이어만 API로 자동 수집</strong>하는 방향으로 범위를 스스로 조정</li>
+        <li>VMware vSphere(REST) / ESXi(pyvmomi SOAP) / XCP-ng(XAPI XML-RPC) / Xen Orchestra(REST) — <strong>4개 플랫폼·4가지 API 프로토콜을 단일 인터페이스로 통합</strong>, 물리 호스트 <strong>32대</strong>·VM <strong>492개</strong>(가동 426개)를 자동 수집</li>
+        <li>사이트별 vCenter 개별 로그인 후 수동 엑셀 작성하던 vMotion 대상 선정을 <strong>명령어 1회 실행으로 대체</strong>, 자산관리대장(호스트/VM/요약) 자동 생성</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span><span class="tech-tag">vSphere REST</span><span class="tech-tag">pyvmomi(SOAP)</span><span class="tech-tag">XCP-ng XAPI</span><span class="tech-tag">Xen Orchestra</span><span class="tech-tag">openpyxl</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div>
+        <div class="proj-title">VM Content Library 기반 OS 설치 자동화·표준화</div>
+        <div class="proj-tag">기획·개발·표준화 주도</div>
+      </div>
+      <div class="proj-period">2025.03 ~ 2025.09</div>
+    </div>
+    <div class="proj-body">
+      <ul>
+        <li>서비스별(다우오피스·문자·쿠폰·사방넷)로 제각각이던 OS 설치 방식을 분석해 <strong>공통 항목을 표준화</strong>하고 VMware Content Library에 <strong>표준 VM 템플릿</strong> 구성</li>
+        <li>Python·Shell 스크립트로 VM 생성·구성 과정을 자동화하여 <strong>VM 구성 시간 50% 단축</strong> 및 <strong>휴먼 에러 감소</strong></li>
+        <li><strong>WBS 기반 일정관리 로드맵</strong>을 작성하여 자동화 도입을 체계적으로 진행</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span><span class="tech-tag">Shell Script</span><span class="tech-tag">VMware vSphere</span><span class="tech-tag">Content Library</span><span class="tech-tag">Rocky Linux</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div>
+        <div class="proj-title">Ansible 기반 멀티서버 운영 자동화</div>
+        <div class="proj-tag">기존 체계 운영 + 신규 Playbook 직접 작성</div>
+      </div>
+      <div class="proj-period">2024.02 ~ 현재</div>
+    </div>
+    <div class="proj-body">
+      <ul>
+        <li>다수 서버 대상 계정 생성·삭제·패스워드 변경, iptables 다단계 점검, 클러스터 모니터링 등 <strong>Ansible 자동화 도구 운영</strong></li>
+        <li>기존 인프라(인벤토리·인증·variable 패턴) 기반으로 <strong>신규 Playbook 직접 작성</strong> — OpenSSL 버전 일괄 수집(block/rescue 패턴), 웹쉘 탐지 스크립트 배포·실행·결과 수집</li>
+        <li>Pacemaker/Corosync(pcs) 클러스터 오류 상태 자동 수집·장애 유형별 로그 분류</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-tag">Ansible(ad-hoc·Playbook)</span><span class="tech-tag">Bash/Shell</span><span class="tech-tag">Rocky Linux/RHEL</span><span class="tech-tag">Pacemaker/Corosync</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div>
+        <div class="proj-title">쿠폰 BI Tableau Server 신규 도입 (3-Tier 인프라 구축)</div>
+        <div class="proj-tag">인프라 설계·구축 담당</div>
+      </div>
+      <div class="proj-period">2025.02 ~ 2025.03</div>
+    </div>
+    <div class="proj-body">
+      <ul>
+        <li>선불망(폐쇄망) 내 <strong>Tableau Server를 신규 설계·구축</strong></li>
+        <li><strong>WEB-WAS-DB 3-Tier 인프라</strong>와 L4(로드밸런싱)/DNS/Reverse Proxy를 직접 구성하여 안정적 서비스 접근 경로 확보</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-tag">Tableau Server</span><span class="tech-tag">Citrix L4</span><span class="tech-tag">DNS</span><span class="tech-tag">Apache Reverse Proxy</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-header">
+      <div>
+        <div class="proj-title">AWS Bedrock + LiteLLM 기반 AI 인프라 PoC</div>
+        <div class="proj-tag">아키텍처 설계·구축 단독 수행</div>
+      </div>
+      <div class="proj-period">2026.02 ~ 2026.04</div>
+    </div>
+    <div class="proj-body">
+      <ul>
+        <li>사내 Claude Code 도입을 위해 Amazon Bedrock 연동 및 <strong>LiteLLM 게이트웨이 서버를 설계·구축</strong>, docker-compose로 재현 가능한 배포 환경 구성</li>
+        <li>부문별·사용자별 <strong>Quota 정책과 사용량·비용 모니터링 체계를 구현</strong>, API Billing 비용을 단일 게이트웨이로 중앙 관리</li>
+      </ul>
+      <div class="tech-stack">
+        <span class="tech-tag">AWS Bedrock</span><span class="tech-tag">LiteLLM</span><span class="tech-tag">docker-compose</span><span class="tech-tag">AWS CLI</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="steady-work">
+    <h4>상시 업무 — 사내·서비스 물리 인프라 구축·운영 <span style="font-weight:400;color:#888">(2024.02 ~ 현재)</span></h4>
+    <ul>
+      <li><strong>물리 인프라:</strong> Dell/Lenovo 서버 펌웨어 업데이트(iDRAC/IMM), IDC 서버 반입·반출 및 케이블 포설</li>
+      <li><strong>네트워크·보안:</strong> Fortigate 방화벽 정책·VPN 관리, Cisco 스위치 config</li>
+      <li><strong>가상화·VDI:</strong> VMware vSphere, Xen Hypervisor, Citrix VDI 운영</li>
+      <li>물리서버 → 네트워크 → 가상화 → 클라우드까지 <strong>인프라 전 레이어를 직접 운영</strong>하며 폭넓은 오너십 축적</li>
+    </ul>
+  </div>
+
+  <h3 style="margin-top:8px">이전 경력 — 우리에프아이에스 인프라본부 클라우드팀 <span style="font-weight:400;color:#888;font-size:13px">(2023.10 ~ 2023.12)</span></h3>
+  <ul>
+    <li>우리금융그룹 그룹공동 클라우드 도입 로드맵 및 개념 문서 작성, 클라우드 서비스 모델(IaaS/PaaS/SaaS) 정리</li>
+  </ul>
+
+  <div class="section-header">
+    <h2>기술 스택</h2>
+  </div>
+  <table>
+    <tr><th>분류</th><th>보유 기술</th></tr>
+    <tr><td><strong>가상화</strong></td><td>VMware vSphere, Content Library, XCP-ng, ESXi, Xen Hypervisor, Citrix VDI</td></tr>
+    <tr><td><strong>OS</strong></td><td>Rocky Linux / RHEL, Windows Server</td></tr>
+    <tr><td><strong>운영 자동화·IaC</strong></td><td>Ansible(ad-hoc, Playbook / block·rescue), Python, Bash/Shell Script</td></tr>
+    <tr><td><strong>물리·하드웨어</strong></td><td>Dell/Lenovo 서버, iDRAC/IMM, 펌웨어, IDC 설치·케이블 포설</td></tr>
+    <tr><td><strong>네트워크·보안</strong></td><td>Fortigate 방화벽·VPN, Cisco 스위치, Citrix L4, DNS, Apache Reverse Proxy, iptables</td></tr>
+    <tr><td><strong>클라우드·컨테이너</strong></td><td>AWS(Bedrock, CLI), docker-compose, LiteLLM</td></tr>
+    <tr><td><strong>아키텍처</strong></td><td>WEB-WAS-DB 3-Tier 구축, WBS 로드맵, 클라우드 아키텍처 설계</td></tr>
+  </table>
+
+  <div class="section-header">
+    <h2>자격증 &amp; 학력</h2>
+  </div>
+  <table>
+    <tr><th>자격증</th><th>취득</th></tr>
+    <tr><td>AWS Certified Solutions Architect – Associate (SAA)</td><td>2023.10</td></tr>
+    <tr><td>AWS Certified Cloud Practitioner (CCP)</td><td>2022.08</td></tr>
+    <tr><td>OPIc IH (영어 말하기 Intermediate High)</td><td>2025.03</td></tr>
+  </table>
+  <p><strong>울산대학교</strong> — 전기전자공학 주전공 / IT융합 복수전공 (2023.02 졸업)</p>
+
+</div><!-- .page -->
+
+<div class="footer">© 2026 고재민 · 경력기술서 · jaemin.ko98@gmail.com</div>
+
+</body>
+</html>
